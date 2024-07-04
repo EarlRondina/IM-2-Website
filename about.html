@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap" rel="stylesheet">
+
         <style>
+     @font-face {
+            font-family: "Lusitana";
+            src: url(fonts/Lusitana-Regular.ttf);
+            }
+            h1 {
+                font-family: "Lusitana";
+                color: #004D95;
+            }
+           @font-face { 
+            font-family: "Lusitana Bold";
+            src: url(fonts/Lusitana-Bold.ttf);
+            }
+            h2 {
+                font-family: "Lusitana Bold";
+                color: #004D95;
+                font-size: 40px;
+            }
 
         #rectangle{
         top: 90px;
@@ -12,17 +27,19 @@
         width:1380px;
         height:550px;
         background:white;
-        position:relative;
+        position:fixed;
         justify-content: center;
         align-items: center;
-        font-family: lusitan;
             }
 
         </style>
     </head>
     <body style="background-color:#C8E8E7;">
         <div id="rectangle">
-
+            <h2 style ="position: relative; margin-top: 40px; margin-left: 50px;" > Contact Us</h1>
+                <img style ="height: 86px; width: 96px; position: relative; left: 50px;"src="images/DA.png">
+                <img style ="bottom: 6px; height: 76px; width: 78px; position: relative; left: 80px;"src="images/PPD.png">
+                <img style ="top: 70px; height: 76px; width: 82px; position: relative;"src="images/MD.png">
         </div>
 </body>
 </html>
