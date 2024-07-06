@@ -1,36 +1,94 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <style>
+            @font-face {
+            font-family: "Alike";
+            src: url(fonts/Alike.ttf);
+            }
+            h1 {
+                font-family: "Alike";
+                text-align: center;
+                font-size: 24px;
+                justify-content: center;
+                
+            }
             #box {
                 top: 160px;
                 left: 40px;
                 width:1380px;
                 height:720px;
                 background:white;
-                position:fixed;
+                position:absolute;
                 justify-content: center;
                 align-items: center;
             }
             #name {
-                position:fixed;
+                position:absolute;
                 left: 300px;
                 top: 40px;
             }
 
             #doc {
-                position: relative;
+                position: absolute;
                 top: 60px;
+                left: 80px;
             }
 
             #inner {
-                background: #666666;
-                position: relative;
-                top: 160px;
-                left: 40px;
-                width:980px;
-                height:420px;
+                background-color: rgba(102, 102, 102, 0.12);
+                border-radius: 15px;
+                position: absolute;
+                top: 90px;
+                left: 586px;
+                width:585px;
+                height:371px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 40px;
             }
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            #contact {
+                width: 585px;
+                height: 60px;
+                background: white;
+                box-shadow: 4px 4px 4px rgba(102, 102, 102, 0.40);
+                position: absolute;
+                top: 500px;
+                left: 575px;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            #contact img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    #read {
+        position:absolute;
+        top: 300px;
+        left: 235px;
+        background: #FDA0A0;
+        color: black;
+        outline: none;
+        border-radius: 15px;
+    }
+    .btn-primary:focus {
+        outline: none;
+    }
         </style>
     </head>
     <body style="background-color: #B8DDED;">
@@ -38,6 +96,19 @@
         <div id ="box">
             <img id="doc" src="images/doctor.png">
             <div id="inner">
+                <h1> I'm a General Practitioner based in Cebu, 
+                    Philippines that provides medical consultation, 
+                    advice, treatment, management, and appropriate 
+                    referrals to both Adult and Pediatric parients.</h1>
+    
+                    <button id ="read" type="button" class="btn btn-primary btn-lg">Read More</button>
+                 </div>
+                 <div id="contact">
+                    <img src="images/check.png">
+                    <img src="images/da.png">
+                    <img src="images/konsulta.png">
+                    <img src="images/md.png">
+                    <img style="height: 50px;" src="images/ppd.png">
                  </div>
         </div>
     </body>
